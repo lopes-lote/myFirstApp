@@ -1,0 +1,45 @@
+
+
+ /* 
+ definir a paleta de cores!
+ */ 
+:root {
+    --branco:#ffffff;
+    --gelo:#f1f1f1;
+    --verde:#19c465;
+    --preto:#2a2a2a;
+}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+body { 
+    background-color: var(--branco);
+    font-family: 'Bebas Neue',  sans-serif;
+    font-size: 15px;
+    *line-height: 25px;
+}
+.toolbar{
+    height: 80px;
+}
+
+.tab-link{
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+}
+
+.toolbar-inner .link{    
+    flex:1;
+    height: 80px; 
+    text-align: center;
+    font-size: 15px;
+    line-height: 25px;
+	font-weight:bold;
+}
+
+.toolbar-inner .link:not(.active){
+    color:gray;
+	font-weight:normal;
+}
+
+.toolbar-inner > .link i{
+    font-size: 28px;
+}
