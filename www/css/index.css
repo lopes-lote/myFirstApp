@@ -25,6 +25,14 @@ body {
     justify-content: center;
     flex-flow: column wrap;
 }
+.toolbar-inner .{
+
+    background-color: var(--branco);
+    border-top: 1px solid var(--gelo);
+}
+/*
+    modificar o toolbar
+*/
 
 .toolbar-inner .link{    
     flex:1;
@@ -33,13 +41,40 @@ body {
     font-size: 15px;
     line-height: 25px;
 	font-weight:bold;
+    color: var(--verde);
 }
 
+
+
 .toolbar-inner .link:not(.active){
-    color:gray;
+    color: var(--preto);
 	font-weight:normal;
+  
 }
 
 .toolbar-inner > .link i{
     font-size: 28px;
+}
+/*classe da barra de navegacao*/
+.top-nav{
+    width: 100%;
+    background: var(--branco);
+    height: 60px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.title-logo{
+   font-weight: 600;
+   margin-left: 5%; 
+}
+.title-logo span{
+    color: var(--verde);
+}
+.btn-cart {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
 }
